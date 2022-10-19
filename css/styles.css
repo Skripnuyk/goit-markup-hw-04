@@ -17,6 +17,7 @@
   --secondary-logo-color: #000000;
   --box-color-gray: #eeeeee;
   --box-color-portfolio: #ececec;
+  --primary-icon-color: #afb1b8;
 }
 .list {
   list-style: none;
@@ -239,13 +240,13 @@ img {
 }
 
 .icons-link {
-  width: 100%;
   height: 100%;
   background-color: var(--secondary-bg-color);
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .container-list {
@@ -353,7 +354,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary-text-color);
+  color: var(--primary-icon-color);
 }
 .social-icon {
   fill: currentColor;
@@ -380,12 +381,12 @@ img {
 .clients-link {
   width: 100%;
   height: 100%;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary-text-color);
+  color: var(--primary-icon-color);
 }
 
 .clients-icon {
@@ -441,7 +442,12 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.card-item:hover {
+.card-link {
+  display: block;
+}
+
+.card-link:hover,
+.card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -458,9 +464,13 @@ img {
   border: 1px solid var(--box-color-portfolio);
 }
 
+.project-title-name {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
 .project-title {
-  width: 322px;
-  margin: 20px auto 0px;
+  padding-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -469,8 +479,6 @@ img {
 
 .project-name {
   color: var(--primary-text-color);
-  width: 322px;
-  margin: 0px auto 20px;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -515,8 +523,9 @@ img {
   letter-spacing: 0.03em;
 }
 .footer-contacts {
-  color: var(--secondary-link-color);
-
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
