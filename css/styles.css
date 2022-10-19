@@ -231,15 +231,12 @@ img {
 .icons-list {
   display: flex;
   gap: 30px;
-  margin-bottom: 30px;
 }
 
-.icons-item {
-  height: 120px;
-}
+
 
 .icons-link {
-  height: 100%;
+  height: 120px;
   background-color: var(--secondary-bg-color);
   border-radius: 4px;
   display: flex;
@@ -467,6 +464,7 @@ img {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
+  padding-right: 24px;
 }
 .project-title {
   padding-bottom: 4px;
